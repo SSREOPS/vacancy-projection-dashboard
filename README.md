@@ -1,6 +1,6 @@
 # 📊 Vacancy Projection Automation
 
-This is a Streamlit-based automation tool that allows users to upload raw vacancy report, process the data, and generate dynamic vacancy projections with customizable pivot analysis.
+This is a Streamlit-based automation tool that allows SSRE Executives to upload raw vacancy report, process the data, and generate dynamic vacancy projections with customizable pivot analysis.
 
 ## 🚀 Features
 - Upload vacancy report (Excel)
@@ -20,4 +20,4 @@ This is a Streamlit-based automation tool that allows users to upload raw vacanc
 ## 📂 How to Run Locally
 ```bash
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run Vacancy_Projection_App.py
