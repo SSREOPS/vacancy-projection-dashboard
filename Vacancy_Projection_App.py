@@ -9,7 +9,7 @@ st.set_page_config(page_title="Vacancy Projection & Analytics Dashboard", layout
 app_desc = """This interactive dashboard enables users to upload raw vacancy reports, transform the data into a structured format, and generate vacancy projections based on a selected date.\n
 Users can dynamically filter by unit status, analyze projected vacancies, and create customized pivot summaries for actionable insights across properties and management teams."""
 
-st.title("SSRE Vacancy Projection & Analytics Dashboard", help=app_desc, text_alignment="center")
+st.title("Vacancy Projection & Analytics Dashboard", help=app_desc, text_alignment="center")
 st.caption("Analyze, project, and visualize vacancy trends with dynamic filtering and pivot analysis.", text_alignment="center")
 
 # -----------------------------
