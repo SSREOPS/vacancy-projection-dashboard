@@ -38,7 +38,21 @@ bottom_left, bottom_right                = st.columns([1.95, 6.05])
 # -----------------------------
 with top_left.container(border=True, height="stretch", horizontal_alignment="center", vertical_alignment="center"):
     uploaded = st.file_uploader("Upload YSR 1001 Vacancy Report as downloaded", type=["xlsx"], max_upload_size=1)
-    st.stop() if not uploaded else ""
+    #st.stop() if not uploaded else ""
+    
+    # ✅ Show sample download if no file uploaded
+    if not uploaded:
+        st.caption("Download a sample file for testing.")
+
+        with open("VacancyReport_Dummy.xlsx", "rb") as file:
+            st.download_button(
+                label="📥 Download Sample Vacancy Report",
+                data=file,
+                file_name="VacancyReport_Dummy.xlsx",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
+
+        st.stop()  # ✅ Stop app AFTER showing download
 
 # -----------------------------
 # Projection date (Next Monday default)
